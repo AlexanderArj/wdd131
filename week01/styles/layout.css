@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,25 +5,25 @@
 }
 
 :root {
-  --dark-blue: #0D1B2A;
-  --medium-blue: #1B263B;
-  --light-blue: #415A77;
-  --light-blue-2: #778DA9;
-  --titles-color: #E0E1DD;
-  --text-color: #f3f5f8fc;
-  --nav-text-color: #ffffff;
-  --nav-text-color-hover: rgb(252, 165, 5);
+    --dark-blue: #0D1B2A;
+    --medium-blue: #1B263B;
+    --light-blue: #415A77;
+    --light-blue-2: #778DA9;
+    --titles-color: #E0E1DD;
+    --text-color: #f3f5f8fc;
+    --nav-text-color: #ffffff;
+    --nav-text-color-hover: rgb(252, 165, 5);
 
-  --general-padding: 5px;
-  --secondary-padding: 3px;
-  --margins: 3px;
-  --border-r: 3px;
+    --general-padding: 5px;
+    --secondary-padding: 3px;
+    --margins: 3px;
+    --border-r: 3px;
 }
 
 body {
     padding: 5px;
     margin: 5px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(234, 234, 234);
 }
 
@@ -91,12 +90,3 @@ footer {
     background-color: var(--dark-blue);
     color: var(--text-color);
 }
-
-
-
-
-
-
-
-
-
