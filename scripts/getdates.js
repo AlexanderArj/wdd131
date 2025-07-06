@@ -11,6 +11,6 @@ lastModification.innerHTML = `<span class="highlight">${new Intl.DateTimeFormat(
     {
         dateStyle: "short",
         timeStyle: "medium",
-        hour12: false  
+        hour12: false
     }
 ).format(lastModifiedDate)}</span>`;
