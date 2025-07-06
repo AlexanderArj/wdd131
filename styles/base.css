@@ -117,17 +117,18 @@ main p {
 }
 
 #selfie {
-    min-width: 150px;
+    width: 150px;
     height: auto;
     object-fit: cover;
     padding: var(--general-padding);
     margin-top: 0;
     margin-left: 5px;
     border-radius: 12px;
+    flex-shrink: 0;
 }
 
 #brazil-flag {
-    min-width: 200px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     padding: var(--general-padding);
