@@ -1,8 +1,11 @@
-/* Make the span tag in the header to display as a block, display: block; in order to center the logo and text easily.
 
-    ***I think this is not applicable because there is no logo on this home page.
-    
+/*
+    --- CSS section:
+    Make the <span> tag in the header display as a block (display: block) in order to center the logo and text easily.
+
+    --- This doesn't seem applicable, since there is no logo on this page, and there’s no need to use display: block just to center the text.
 */
+
 * {
     margin: 0;
     padding: 0;
