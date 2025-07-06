@@ -61,14 +61,12 @@ h1 span {
     margin-left: 10px;
 }
 
-.highlight,
-h1 span,
-#p-color {
+.highlight, h1 span, #p-color {
     color: #FFF176;
 }
 
 main {
-    max-width: 1100px;
+    max-width: 1100p;
     justify-self: center;
     grid-area: main;
     background-color: var(--light-blue);
@@ -135,13 +133,11 @@ main p {
     border-radius: 12px;
 }
 
-#selfie,
-#brazil-flag {
+#selfie, #brazil-flag {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#selfie:hover,
-#brazil-flag:hover {
+#selfie:hover, #brazil-flag:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -195,14 +191,12 @@ nav {
     border-radius: 5px;
 }
 
-nav a,
-ul a {
+nav a, ul a {
     text-decoration: none;
     color: var(--nav-text-color);
 }
 
-nav a:hover,
-ul a:hover {
+nav a:hover, ul a:hover {
     cursor: pointer;
     color: var(--nav-text-color-hover);
 }
