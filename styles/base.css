@@ -68,7 +68,7 @@ h1 span,
 }
 
 main {
-    max-width: 1100p;
+    max-width: 1100px;
     justify-self: center;
     grid-area: main;
     background-color: var(--light-blue);
