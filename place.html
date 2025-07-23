@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tallinn, Estonia</title>
+    <meta name="description" content="Page with some information about Tallinn Estonia">
+    <meta name="author" content="Alexander Romero">
+
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tallinn, Estonia</h1>
+    </header>
+    <main>
+        <picture>
+            <source media="(min-width: 800px)" srcset="images/tallinn-winter.webp">
+            <img
+                src="images/tallinn-summer.webp"
+                alt="Tallinn City View"
+                width="900"
+                height="600"
+            >
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: </li>
+                <li>Population: </li>
+                <li>Capital: </li>
+                <li>Languages: </li>
+                <li>Time Zone: </li>
+                <li>Calling Code: </li>
+                <li>Internet TLD: </li>
+            </ul>
+        </div>
+
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/summer-icon.svg" alt="Summer Weather Icon">
+            <ul>
+                <li>Temperature: </li>
+                <li>Conditions: </li>
+                <li>Wind: </li>
+                <li>Wind Chill: </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+        <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+    </footer>
+</body>
+</html>
