@@ -36,7 +36,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Noto Sans', Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
     font-size: var(--font-size-md);
@@ -58,6 +58,10 @@ h2 {
     color: var(--estonian-blue);
     margin-bottom: var(--spacing-sm);
     font-size: var(--font-size-lg);
+}
+
+h1, h2 {
+    font-family: 'Red Hat Display', Arial, sans-serif;
 }
 
 main {
