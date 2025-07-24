@@ -85,6 +85,11 @@ picture img {
     gap: var(--spacing-xs);
 }
 
+.data li span {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
 .data ul, .weather ul {
     list-style: none;
     padding: 0;
