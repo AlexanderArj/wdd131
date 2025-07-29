@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alexander Romero" />
+    <meta name="description" content="LDS Temple Gallery" />
+    <title>Temple Album</title>
+
+
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+
+
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" />
+
+    <script defer src="scripts/temples.js"></script>
+    <script defer src="scripts/filtered-temples.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul>
+                <li><a href="#" id="home">Home</a></li>
+                <li><a href="#" id="old-temple">Old</a></li>
+                <li><a href="#" id="new-temple">New</a></li>
+                <li><a href="#" id="large-temple">Large</a></li>
+                <li><a href="#" id="small-temple">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>LDS Temples Gallery</h2>
+        <div class="grid-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
+        <p id="p-color">Last modification: <span id="lastmodification"></span></p>
+    </footer>
+</body>
+
+</html>
