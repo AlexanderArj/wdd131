@@ -52,8 +52,34 @@ function updateReviewCounter() {
     }
 }
 
+function validateStarRating() {
+  const form = document.getElementById("review-form");
+  const ratingMsg = document.getElementById("rating-message");
+
+  if (!form || !ratingMsg) return;
+
+  form.addEventListener("submit", function (event) {
+    const selected = form.querySelector('input[name="rating"]:checked');
+
+    if (!selected) {
+      event.preventDefault();
+      ratingMsg.textContent = "Please select at least one star rating.";
+    } else {
+      ratingMsg.textContent = "";
+    }
+  });
+
+  const stars = form.querySelectorAll('input[name="rating"]');
+  stars.forEach(star => {
+    star.addEventListener("change", () => {
+      ratingMsg.textContent = "";
+    });
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     populateProductOptions();
     updateReviewCounter();
+    validateStarRating();
 });
+
