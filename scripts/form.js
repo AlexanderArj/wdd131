@@ -52,27 +52,29 @@ function updateReviewCounter() {
     }
 }
 
-function validateStarRating() {
+function setupRatingValidation() {
   const form = document.getElementById("review-form");
-  const ratingMsg = document.getElementById("rating-message");
+  const ratingMessage = document.getElementById("rating-message");
 
-  if (!form || !ratingMsg) return;
+  if (!form || !ratingMessage) return;
 
+  // Validación al intentar enviar el formulario
   form.addEventListener("submit", function (event) {
-    const selected = form.querySelector('input[name="rating"]:checked');
+    const selected = document.querySelector('input[name="rating"]:checked');
 
     if (!selected) {
-      event.preventDefault();
-      ratingMsg.textContent = "Please select at least one star rating.";
+      event.preventDefault(); // Bloquea el envío
+      ratingMessage.textContent = "Please select at least one star rating.";
     } else {
-      ratingMsg.textContent = "";
+      ratingMessage.textContent = "";
     }
   });
 
-  const stars = form.querySelectorAll('input[name="rating"]');
+  // Limpia el mensaje automáticamente al seleccionar una estrella
+  const stars = document.querySelectorAll('input[name="rating"]');
   stars.forEach(star => {
     star.addEventListener("change", () => {
-      ratingMsg.textContent = "";
+      ratingMessage.textContent = "";
     });
   });
 }
@@ -80,6 +82,8 @@ function validateStarRating() {
 document.addEventListener("DOMContentLoaded", () => {
     populateProductOptions();
     updateReviewCounter();
-    validateStarRating();
+    setupRatingValidation();
 });
+
+
 
