@@ -53,31 +53,30 @@ function updateReviewCounter() {
 }
 
 function setupRatingValidation() {
-  const form = document.getElementById("review-form");
+  const form = document.querySelector(".review-form");
   const ratingMessage = document.getElementById("rating-message");
 
   if (!form || !ratingMessage) return;
 
-  // Validación al intentar enviar el formulario
   form.addEventListener("submit", function (event) {
-    const selected = document.querySelector('input[name="rating"]:checked');
+    const selected = document.querySelector('input[name="stars"]:checked');
 
     if (!selected) {
-      event.preventDefault(); // Bloquea el envío
+      event.preventDefault();
       ratingMessage.textContent = "Please select at least one star rating.";
     } else {
       ratingMessage.textContent = "";
     }
   });
 
-  // Limpia el mensaje automáticamente al seleccionar una estrella
-  const stars = document.querySelectorAll('input[name="rating"]');
+  const stars = document.querySelectorAll('input[name="stars"]');
   stars.forEach(star => {
     star.addEventListener("change", () => {
       ratingMessage.textContent = "";
     });
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
     populateProductOptions();
