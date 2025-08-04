@@ -49,11 +49,6 @@ function updateReviewCounter() {
         }
 
         localStorage.setItem("reviewCount", count);
-
-        const counterSpan = document.getElementById("review-count");
-        if (counterSpan) {
-            counterSpan.textContent = count;
-        }
     }
 }
 
