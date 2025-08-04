@@ -76,7 +76,7 @@ h1 {
     color: var(--text-primary);
 }
 
-.required {
+.required, #rating-message {
   color: var(--required-co);
   font-weight: bold;
   margin-left: 5px;
