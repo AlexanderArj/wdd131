@@ -27,7 +27,7 @@ body {
     font-family: 'Noto Sans', Arial, sans-serif;
 }
 
-h1 {
+h1, .label {
     font-family: 'Red Hat Display', Arial, sans-serif;
 }
 
