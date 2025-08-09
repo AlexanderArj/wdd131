@@ -1,0 +1,168 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --estonian-blue: #0072CE;
+    --estonian-black: #000000;
+    --estonian-white: #FFFFFF;
+
+    --background-light: #F5F5F5;
+
+    --text-on-blue: #FFFFFF;
+    --text-on-black: #E0E0E0; 
+    --text-on-white: #1A1A1A;
+
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-light: #E0E0E0;
+
+    --finland-white: #FFFFFF;
+    --finland-blue:  #003580; /* azul bandera Finlandia */
+
+    /* UI helpers (Finlandia) */
+    --finland-bg-main:       #FFFFFF;
+    --finland-bg-accent:     #F2F6FB; /* azul muy pálido */
+    --finland-text-title:    #0F1720; /* texto oscuro para buen contraste */
+    --finland-text-paragraph: #2b2c2d;
+    --finland-text-on-blue:  #FFFFFF; /* texto sobre el azul de la bandera */
+
+    --colombia-yellow: #FDFD96; /* bandera (amarillo) */
+    --colombia-blue:   #0033A0; /* bandera (azul) */
+    --colombia-red:    #CE1126; /* bandera (rojo) */
+
+    /* UI helpers (Colombia) */
+    --colombia-bg-main:      #FFFFFF; /* fondo claro neutro para contraste */
+    --colombia-bg-accent:    #F7F8FA; /* acento muy suave */
+    --colombia-text-title:   #111111; /* contraste sobre fondo claro */
+    --colombia-text-paragraph:#333333;
+    --colombia-text-on-dark: #FFFFFF; /* para textos sobre azul/rojo/amarillo oscuro */
+
+    --brazil-green:  #009C3B; /* verde bandera */
+    --brazil-yellow: #FFDF00; /* amarillo bandera */
+    --brazil-blue:   #002776; /* azul del globo */
+
+    /* UI helpers (Brazil) */
+    --brazil-bg-main:        #FFFFFF;
+    --brazil-bg-accent:      #F4FFF6; /* verde muy pálido */
+    --brazil-text-title:     #06221B; /* texto oscuro (mejor en contraste con amarillo) */
+    --brazil-text-paragraph: #2B3A33;
+    --brazil-text-on-dark:   #FFFFFF; /* para textos sobre verde/azul */
+
+    --netherlands-red:   #AE1C28; /* rojo bandera */
+    --netherlands-white: #FFFFFF;
+    --netherlands-blue:  #21468B; /* azul bandera */
+
+    /* UI helpers (Netherlands) */
+    --netherlands-bg-main:       #FFFFFF;
+    --netherlands-bg-accent:     #F6F8FB; /* acento frío */
+    --netherlands-text-title:    #0E1420;
+    --netherlands-text-paragraph: #444D61;
+    --netherlands-text-on-dark:  #FFFFFF; /* para contraste sobre rojo/azul */
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1rem;  
+    --spacing-lg: 1.5rem; 
+    --spacing-xl: 2rem;   
+
+    --font-size-sm: 0.9rem;
+    --font-size-md: 1rem; 
+    --font-size-lg: 1.2rem;
+    --font-size-xl: 1.8rem;
+    --font-size-xxl: 2.5rem;
+
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+}
+
+body {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: var(--font-size-md);
+}
+
+header {
+    padding: var(--spacing-md);
+    text-align: center;
+}
+
+h1 {
+    font-size: var(--font-size-xl);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+}
+
+h1, h2 {
+    font-family: 'Red Hat Display', Arial, sans-serif;
+}
+
+main {
+    margin: var(--spacing-md) auto;
+    padding: 0 var(--spacing-md);
+    max-width: 900px; 
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto var(--spacing-lg) auto;
+    border-radius: var(--border-radius-md);
+}
+
+.data, .weather {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.data li span {
+    font-weight: 600;
+}
+
+.data ul, .weather ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-xs);
+}
+
+.data ul li, .weather ul li {
+    padding: var(--spacing-xs) 0;
+    border-bottom: 1px dashed var(--text-light);
+}
+
+.data ul li:last-child, .weather ul li:last-child {
+    border-bottom: none;
+}
+
+.weather img {
+    display: block;
+    margin: 0 auto var(--spacing-md) auto;
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    text-align: center;
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    font-size: var(--font-size-sm);
+}
+
+footer p {
+    margin-bottom: var(--spacing-xs);
+}
+
+footer p:last-child {
+    margin-bottom: 0;
+}

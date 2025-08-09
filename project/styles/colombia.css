@@ -1,0 +1,46 @@
+
+
+body {
+    background-color: var(--colombia-bg-main);
+    color: var(--colombia-text-title);
+}
+
+header {
+    background-color: var(--colombia-yellow);
+    color: var(--colombia-text-title);
+}
+
+h2 {
+    color: var(--colombia-blue);
+}
+
+.data, .weather {
+    background-color: var(--colombia-bg-accent);
+    color: var(--colombia-text-paragraph);
+}
+
+.data li span {
+    color: var(--colombia-text-paragraph);
+}
+
+footer {
+    background-color: var(--colombia-red);
+    color: var(--colombia-text-on-dark);
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    main::before {
+        background-image: url('../images/barranquilla-colombia1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        border-radius: var(--border-radius-md);
+    }
+}
+
+
+
+

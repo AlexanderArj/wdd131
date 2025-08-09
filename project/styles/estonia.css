@@ -1,0 +1,44 @@
+
+body {
+    background-color: var(--background-light);
+    color: var(--text-primary);
+}
+
+header {
+    background-color: var(--estonian-blue);
+    color: var(--text-on-blue);
+}
+
+h2 {
+    color: var(--estonian-blue);
+}
+
+.data, .weather {
+    background-color: var(--estonian-white);
+    color: var(--text-on-white);
+}
+
+.data li span {
+    color: var(--text-secondary);
+}
+
+footer {
+    background-color: var(--estonian-black);
+    color: var(--text-on-black);
+}
+
+@media screen and (min-width: 800px) {
+    
+    main::before {
+        background-image: url('../images/tallinn-winter1.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        border-radius: var(--border-radius-md);
+    }
+}
+
+
+
+

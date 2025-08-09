@@ -1,0 +1,45 @@
+
+body {
+    background-color: var(--brazil-bg-main);
+    color: var(--brazil-text-title);
+}
+
+header {
+    background-color: var(--brazil-green);
+    color: var(--brazil-text-on-dark);
+}
+
+h2 {
+    color: var(--brazil-green);
+}
+
+.data, .weather {
+    background-color: var(--brazil-bg-accent);
+    color: var(--brazil-text-paragraph);
+}
+
+.data li span {
+    color: var(--brazil-text-paragraph);
+}
+
+footer {
+    background-color: var(--brazil-blue);
+    color: var(--brazil-text-on-dark);
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    main::before {
+        background-image: url('../images/sp-braz-vanessa-bumbeers-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        border-radius: var(--border-radius-md);
+    }
+}
+
+
+
+

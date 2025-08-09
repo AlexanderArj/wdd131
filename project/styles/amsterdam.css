@@ -1,0 +1,43 @@
+body {
+    background-color: var(--netherlands-bg-main);
+    color: var(--netherlands-text-title);
+}
+
+header {
+    background-color: var(--netherlands-red);
+    color: var(--netherlands-text-on-dark);
+}
+
+h2 {
+    color: var(--netherlands-blue);
+}
+
+.data, .weather {
+    background-color: var(--netherlands-bg-accent);
+    color: var(--netherlands-text-paragraph);
+}
+
+.data li span {
+    color: var(--netherlands-text-paragraph);
+}
+
+footer {
+    background-color: var(--netherlands-blue);
+    color: var(--netherlands-text-on-dark);
+}
+
+@media screen and (min-width: 800px) {
+    
+    main::before {
+        background-image: url('../images/amsterdam-ernest-ojeh-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        border-radius: var(--border-radius-md);
+    }
+}
+
+
+
+
