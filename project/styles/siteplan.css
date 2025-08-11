@@ -19,7 +19,8 @@ body {
     color: var(--text-paragraph);
 }
 
-header, footer {
+header,
+footer {
     background-color: var(--primary-color);
     padding: 1rem;
     width: 70%;
@@ -45,7 +46,8 @@ main {
     border-radius: 12px;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     color: var(--text-title);
 }
@@ -55,14 +57,15 @@ h3 {
     color: var(--primary-color);
 }
 
-.general, .wireframes {
+.general,
+.wireframes {
     display: flex;
     flex-direction: column;
     gap: 15px;
     background-color: var(--background-main);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 p {

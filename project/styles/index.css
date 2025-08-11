@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +5,13 @@
 }
 
 :root {
-    --dark-blue: #0D1B2A;
-    --medium-blue: #1B263B;
-    --light-blue: #415A77;
-    --light-blue-2: #778DA9;
-    --titles-color: #E0E1DD;
-    --text-color: #f3f5f8fc;
-    --nav-text-color: #ffffff;
-    --nav-text-color-hover: rgb(252, 165, 5);
+    --background-main: #FFFFFF;
+    --background-accent: #E3F2FD;
+    --primary-color: #039BE5;
+    --secondary-color: #FFD54F;
+    --text-title-onwhite: #039BE5;
+    --text-title: #f4f6f9;
+    --text-paragraph: #222222;
 
     --general-padding: 5px;
     --secondary-padding: 3px;
@@ -26,7 +24,7 @@ body {
     margin: 5px;
     font-family: "Red Hat Display", sans-serif;
     font-weight: 600;
-    background-color: rgb(234, 234, 234);
+    background-color: var(--background-accent);
 }
 
 .grid-container {
@@ -43,8 +41,8 @@ body {
 }
 
 header {
-    background-color: var(--dark-blue);
-    color: var(--titles-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     grid-column: span 2;
     padding: var(--general-padding);
     min-height: 90px;
@@ -61,8 +59,6 @@ h1 {
     align-self: center;
 }
 
-
-
 h1 span {
     margin-left: 10px;
 }
@@ -70,15 +66,15 @@ h1 span {
 .highlight,
 h1 span,
 #p-color {
-    color: #FFF176;
+    color: var(--secondary-color);
 }
 
 main {
     max-width: 1100px;
     justify-self: center;
     grid-area: main;
-    background-color: var(--light-blue);
-    color: var(--text-color);
+    background-color: var(--background-main);
+    color: var(--text-paragraph);
     padding: var(--general-padding);
     margin: var(--margins);
     border-radius: var(--border-r);
@@ -94,7 +90,7 @@ main {
 }
 
 .card:hover h2 {
-    color: var(--nav-text-color-hover);
+    color: var(--secondary-color);
 }
 
 main p {
@@ -155,12 +151,13 @@ main p {
 h2 {
     text-align: center;
     grid-column: span 2;
+    color: var(--text-title-onwhite);
 }
 
 h3 {
     text-align: center;
-    background-color: rgb(212, 206, 206);
-    color: rgb(40, 37, 32);
+    background-color: var(--secondary-color);
+    color: var(--text-paragraph);
     padding: var(--general-padding);
     margin: var(--margins);
     border-radius: 5px;
@@ -173,8 +170,7 @@ figcaption {
 
 aside {
     grid-area: aside;
-    background-color: var(--medium-blue);
-    color: var(--text-color);
+    background-color: var(--background-main);
     padding: var(--secondary-padding);
     margin: var(--margins);
     border-radius: var(--border-r);
@@ -182,11 +178,13 @@ aside {
     flex-direction: column;
     min-height: auto;
     font-family: "Noto Sans", sans-serif;
-
+    justify-content: space-between;
 }
 
 ul {
     margin: auto;
+    list-style: none;
+    text-align: center;
 }
 
 ul li {
@@ -194,23 +192,29 @@ ul li {
 }
 
 nav {
-    background-color: var(--light-blue-2);
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: space-evenly;
     padding: var(--general-padding);
     border-radius: 5px;
+    height: 100%;
 }
 
-nav a,
+nav a {
+    text-decoration: none;
+    color: var(--text-paragraph);
+}
+
 ul a {
     text-decoration: none;
-    color: var(--nav-text-color);
+    color: var(--text-paragraph);
+    padding: var(--general-padding);
 }
 
 nav a:hover,
 ul a:hover {
     cursor: pointer;
-    color: var(--nav-text-color-hover);
+    color: var(--primary-color);
 }
 
 ul a:hover {
@@ -220,7 +224,7 @@ ul a:hover {
 footer {
     grid-area: footer;
     text-align: center;
-    background-color: var(--dark-blue);
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: var(--background-main);
     height: 50%;
 }
