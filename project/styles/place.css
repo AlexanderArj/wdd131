@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,47 +20,43 @@
     --text-light: #E0E0E0;
 
     --finland-white: #FFFFFF;
-    --finland-blue:  #003580; /* azul bandera Finlandia */
+    --finland-blue:  #003580;
 
-    /* UI helpers (Finlandia) */
     --finland-bg-main:       #FFFFFF;
-    --finland-bg-accent:     #F2F6FB; /* azul muy pálido */
-    --finland-text-title:    #0F1720; /* texto oscuro para buen contraste */
+    --finland-bg-accent:     #F2F6FB;
+    --finland-text-title:    #0F1720;
     --finland-text-paragraph: #2b2c2d;
-    --finland-text-on-blue:  #FFFFFF; /* texto sobre el azul de la bandera */
+    --finland-text-on-blue:  #FFFFFF;
 
-    --colombia-yellow: #FDFD96; /* bandera (amarillo) */
-    --colombia-blue:   #0033A0; /* bandera (azul) */
-    --colombia-red:    #CE1126; /* bandera (rojo) */
+    --colombia-yellow: #FDFD96;
+    --colombia-blue:   #0033A0;
+    --colombia-red:    #CE1126;
 
-    /* UI helpers (Colombia) */
-    --colombia-bg-main:      #FFFFFF; /* fondo claro neutro para contraste */
-    --colombia-bg-accent:    #F7F8FA; /* acento muy suave */
-    --colombia-text-title:   #111111; /* contraste sobre fondo claro */
+    --colombia-bg-main:      #FFFFFF;
+    --colombia-bg-accent:    #F7F8FA;
+    --colombia-text-title:   #111111;
     --colombia-text-paragraph:#333333;
-    --colombia-text-on-dark: #FFFFFF; /* para textos sobre azul/rojo/amarillo oscuro */
+    --colombia-text-on-dark: #FFFFFF;
 
-    --brazil-green:  #009C3B; /* verde bandera */
-    --brazil-yellow: #FFDF00; /* amarillo bandera */
-    --brazil-blue:   #002776; /* azul del globo */
+    --brazil-green:  #009C3B;
+    --brazil-yellow: #FFDF00;
+    --brazil-blue:   #002776;
 
-    /* UI helpers (Brazil) */
     --brazil-bg-main:        #FFFFFF;
-    --brazil-bg-accent:      #F4FFF6; /* verde muy pálido */
-    --brazil-text-title:     #06221B; /* texto oscuro (mejor en contraste con amarillo) */
+    --brazil-bg-accent:      #F4FFF6;
+    --brazil-text-title:     #06221B;
     --brazil-text-paragraph: #2B3A33;
-    --brazil-text-on-dark:   #FFFFFF; /* para textos sobre verde/azul */
+    --brazil-text-on-dark:   #FFFFFF;
 
-    --netherlands-red:   #AE1C28; /* rojo bandera */
+    --netherlands-red:   #AE1C28;
     --netherlands-white: #FFFFFF;
-    --netherlands-blue:  #21468B; /* azul bandera */
+    --netherlands-blue:  #21468B;
 
-    /* UI helpers (Netherlands) */
     --netherlands-bg-main:       #FFFFFF;
-    --netherlands-bg-accent:     #F6F8FB; /* acento frío */
+    --netherlands-bg-accent:     #F6F8FB;
     --netherlands-text-title:    #0E1420;
     --netherlands-text-paragraph: #444D61;
-    --netherlands-text-on-dark:  #FFFFFF; /* para contraste sobre rojo/azul */
+    --netherlands-text-on-dark:  #FFFFFF;
 
     --spacing-xs: 0.5rem;
     --spacing-sm: 0.8rem;
@@ -89,6 +84,12 @@ header {
     text-align: center;
 }
 
+.logo {
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+}
+
 h1 {
     font-size: var(--font-size-xl);
 }
@@ -103,7 +104,7 @@ h1, h2 {
     font-family: 'Red Hat Display', Arial, sans-serif;
 }
 
-main {
+main, article {
     margin: var(--spacing-md) auto;
     padding: 0 var(--spacing-md);
     max-width: 900px; 
@@ -114,6 +115,16 @@ picture img {
     height: auto;
     display: block;
     margin: 0 auto var(--spacing-lg) auto;
+    border-radius: var(--border-radius-md);
+}
+
+article img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    padding: var(--general-padding);
+    margin-top: 0;
+    margin-right: 10px;
     border-radius: var(--border-radius-md);
 }
 
@@ -152,11 +163,25 @@ picture img {
     height: 60px;
 }
 
+.general-information, .food-recs {
+    display: flex;
+    padding: var(--general-padding);
+    gap: 5px;
+}
+
+article p {
+    text-align: left;
+    line-height: 1.8;
+}
+
 footer {
     text-align: center;
     padding: var(--spacing-lg);
     margin-top: var(--spacing-xl);
     font-size: var(--font-size-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 footer p {
