@@ -1,5 +1,6 @@
 @media screen and (min-width: 800px) {
-    main, article {
+    main,
+    article {
         position: relative;
         display: block;
         max-width: 1200px;

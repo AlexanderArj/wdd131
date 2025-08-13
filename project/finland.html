@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,108 +9,82 @@
 
     <script defer src="scripts/place.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/flag.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/place.css" />
     <link rel="stylesheet" href="styles/place-large.css">
     <link rel="stylesheet" href="styles/finland.css">
-
-
 </head>
-
-<header>
-    <div class="logo">
-        <figure>
-            <a href="index.html">
-                <img src="images/Logo.png" width="75px" alt="Logo">
-            </a>
-        </figure>
-    </div>
-    <h1>Helsinki, Finland</h1>
-</header>
+<body>
+    <header>
+        <div class="logo">
+            <figure>
+                <a href="index.html">
+                    <img src="images/Logo.png" width="75px" alt="Logo" loading="lazy">
+                </a>
+            </figure>
+        </div>
+        <h1>Helsinki, Finland</h1>
+    </header>
     <main>
         <picture>
             <source media="(min-width: 800px)" srcset="helsinki-said-aqqa-unplash.jpg">
             <img
                 src="images/helsinki-alexander1.jpg"
-                alt="Tallinn City View"
+                alt="View of Helsinki"
                 width="900"
                 height="600"
+                loading="lazy"
             >
         </picture>
         <div class="data">
-            <h2>Data</h2>
-            <ul>
-            <li><span>Area:</span> 159.2 km²</li>
-            <li><span>Population:</span> ~454,000 (2024)</li>
-            <li><span>Capital:</span> Tallinn</li>
-            <li><span>Languages:</span> Estonian (official)</li>
-            <li><span>Time Zone:</span> Eastern European Time (UTC+2 / +3 DST)</li>
-            <li><span>Calling Code:</span> +372</li>
-            <li><span>Internet TLD:</span> .ee</li>
-            </ul>
+            <h2>The Capital of Finland</h2>
+            <p>
+                Helsinki is known for its stunning architecture, particularly its grand cathedrals and historical squares. The city offers a modern design and rich heritage, with its location on the shores of the Baltic Sea. You can take a short walk from the famous Helsinki Cathedral to the bustling Market Square and the main port, where ferries depart to nearby islands.
+            </p>
         </div>
-
         <div class="weather">
-            <h2>Weather</h2>
-            <img src="images/summer-icon.svg" alt="Summer Weather Icon">
-            <ul>
-                <li><span>Temperature:</span> </li>
-                <li><span>Conditions:</span> </li>
-                <li><span>Wind:</span> </li>
-                <li><span>Wind Chill:</span> </li>
-            </ul>
+            <h2>Best Time to Visit</h2>
+            <img src="images/autumn-icon.svg" alt="Autumn Weather Icon" loading="lazy">
+            <p>
+                The ideal time to visit Helsinki is between late May and early September, when the days are long and temperatures are mild, perfect for exploring on foot.
+            </p>
         </div>
     </main>
-
-
     <article>
-        <h2>Tallinn, one of the best-preserved medieval cities in Europe...</h2>
+        <h2>Helsinki: the city of great cathedrals...</h2>
         <div class="general-information">
-          
             <figure>
-                <img src="images/tallinn-street.jpg" alt="View of a street in Tallinn, Estonia">
-                <figcaption>Old Town, Tallinn</figcaption>
+                <img src="images/helsinki-cathedral.jpg" alt="View of Helsinki Cathedral" loading="lazy">
+                <figcaption>Helsinki Cathedral</figcaption>
             </figure>
             <p>
-                Tallinn is a beautiful and ancient city in Estonia. Its most special part is the Old Town, one of the best-preserved medieval cities in Europe. The streets are made of ancient cobblestones, and you can see colorful houses, tall church towers, and ancient walls. The city has a magical atmosphere. You can visit the main square, admire the ancient walls, or simply get lost in its small, beautiful streets. This is truly an unforgettable place.
+                Located in Senate Square, this white church with its green domes is one of the city's most recognizable landmarks.
                 <br><br>
-
-                Beyond its medieval charm, Tallinn is also a modern city with vibrant cafes, innovative museums, and a lively arts scene. <br>
-                The city’s seaside promenades offer stunning views of the Baltic Sea, and its parks provide peaceful spots to relax. <br>
-                Whether you are interested in history, culture, or simply enjoying beautiful scenery, Tallinn has something for everyone.
+                Close to the cathedral, you'll find the Market Square (Kauppatori) and the city's port. From here, you can enjoy stunning views of the Baltic Sea and the many ferries and boats that connect Helsinki to its neighboring islands.
             </p>
         </div>
 
-        <div class="top-10">
+        <div class="flag-container"></div>
 
-        </div>
-        
-        <h2>Tallinn's Culinary...</h2>
-
+        <h2>Finnish Cuisine...</h2>
         <div class="food-recs">
             <p>
-                Tallinn is a beautiful and ancient city in Estonia. Its most special part is the Old Town, one of the best-preserved medieval cities in Europe. The streets are made of ancient cobblestones, and you can see colorful houses, tall church towers, and ancient walls. The city has a magical atmosphere. You can visit the main square, admire the ancient walls, or simply get lost in its small, beautiful streets. This is truly an unforgettable place.
+                Don't miss out on trying fresh salmon or other local fish dishes at the Market Square stalls.
                 <br><br>
-
-                Beyond its medieval charm, Tallinn is also a modern city with vibrant cafes, innovative museums, and a lively arts scene. <br>
-                The city’s seaside promenades offer stunning views of the Baltic Sea, and its parks provide peaceful spots to relax. <br>
-                Whether you are interested in history, culture, or simply enjoying beautiful scenery, Tallinn has something for everyone.
+                I had this delicious salmon soup during my visit to Helsinki.
             </p>
-
-             <figure>
-                <img src="images/balti.jpg" alt="View of Balti jaama turg, local market in Tallinn">
-                <figcaption>Balti jaama turg</figcaption>
+            <figure>
+                <img src="images/fish.jpg" alt="Local dish, a Finnish soup" loading="lazy">
+                <figcaption>Salmon soup</figcaption>
             </figure>
         </div>
     </article>
-
-    
     <footer>
         <p>&copy; <span id="year"></span> Alexander Romero, Brazil ♟️</p>
         <p id="p-color">Last modification: <span id="lastmodification"></span></p>

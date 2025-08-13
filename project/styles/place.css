@@ -169,6 +169,11 @@ article img {
     gap: 5px;
 }
 
+.flag-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 article p {
     text-align: left;
     line-height: 1.8;

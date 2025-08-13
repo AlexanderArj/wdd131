@@ -9,6 +9,8 @@
 
     <script defer src="scripts/place.js"></script>
     <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/flag.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,87 +27,63 @@
         <div class="logo">
             <figure>
                 <a href="index.html">
-                    <img src="images/Logo.png" width="75px" alt="Logo">
+                    <img src="images/Logo.png" width="75px" alt="Logo" loading="lazy">
                 </a>
             </figure>
         </div>
         <h1>Amsterdam, Netherlands</h1>
     </header>
     <main>
-        <picture>
-            <source media="(min-width: 800px)" srcset="images/amsterdam-ernest-ojeh-unsplash">
-            <img
-                src="images/amsterdam2-ugur-arpaci-unsplash.jpg"
-                alt="Amsterdam City View"
-                width="900"
-                height="600"
-            >
-        </picture>
-        <div class="data">
-            <h2>Data</h2>
-            <ul>
-                <li><span>Area:</span> 159.2 km²</li>
-                <li><span>Population:</span> ~454,000 (2024)</li>
-                <li><span>Capital:</span> Tallinn</li>
-                <li><span>Languages:</span> Estonian (official)</li>
-                <li><span>Time Zone:</span> Eastern European Time (UTC+2 / +3 DST)</li>
-                <li><span>Calling Code:</span> +372</li>
-                <li><span>Internet TLD:</span> .ee</li>
-            </ul>
-        </div>
-        <div class="weather">
-            <h2>Weather</h2>
-            <img src="images/summer-icon.svg" alt="Summer Weather Icon">
-            <ul>
-                <li><span>Temperature:</span> </li>
-                <li><span>Conditions:</span> </li>
-                <li><span>Wind:</span> </li>
-                <li><span>Wind Chill:</span> </li>
-            </ul>
-        </div>
-    </main>
+    <picture>
+        <source media="(min-width: 800px)" srcset="amsterdam-ernest-ojeh-unsplash.jpg">
+        <img
+            src="images/amsterdam2-ugur-arpaci-unsplash.jpg"
+            alt="View of Amsterdam City"
+            width="900"
+            height="600"
+            loading="lazy"
+        >
+    </picture>
+    <div class="data">
+        <h2>Amazing place...</h2>
+        <p>
+           Amsterdam is the largest city in the Netherlands and a cultural, historical, and commercial center. It is known for its canal system, artistic heritage, and narrow, gabled houses.
+        </p>
+    </div>
+    <div class="weather">
+        <h2>Weather</h2>
+        <img src="images/autumn-icon.svg" alt="Autumn Weather Icon" loading="lazy">
+        <p>
+           Amsterdam has a mild climate. Summers are cool and winters are mild. While it rains throughout the year, the best time to visit is from April to September. During these months, the weather is more pleasant with less rain and more sun, making it ideal for exploring the city's canals and attractions.
+        </p>
+    </div>
+</main>
+<article>
+    <h2>Amsterdam: The City of Canals...</h2>
+    <div class="general-information">
+        <figure>
+            <img src="images/canal.jpg" alt="View of an Amsterdam canal" loading="lazy">
+            <figcaption>An Amsterdam Canal</figcaption>
+        </figure>
+        <p>
+            With over 100 kilometers of canals, Amsterdam is often called the "Venice of the North." These canals, along with their historic bridges and houses, are a UNESCO World Heritage site. A unique feature of the city are the "grachtenhuizen," 17th-century canal houses that often lean forward, adding to Amsterdam's charm.
+        </p>
+    </div>
+
+    <div class="flag-container"></div>
 
 
-    <article>
-        <h2>Tallinn, one of the best-preserved medieval cities in Europe...</h2>
-        <div class="general-information">
-          
-            <figure>
-                <img src="images/tallinn-street.jpg" alt="View of a street in Tallinn, Estonia">
-                <figcaption>Old Town, Tallinn</figcaption>
-            </figure>
-            <p>
-                Tallinn is a beautiful and ancient city in Estonia. Its most special part is the Old Town, one of the best-preserved medieval cities in Europe. The streets are made of ancient cobblestones, and you can see colorful houses, tall church towers, and ancient walls. The city has a magical atmosphere. You can visit the main square, admire the ancient walls, or simply get lost in its small, beautiful streets. This is truly an unforgettable place.
-                <br><br>
-
-                Beyond its medieval charm, Tallinn is also a modern city with vibrant cafes, innovative museums, and a lively arts scene. <br>
-                The city’s seaside promenades offer stunning views of the Baltic Sea, and its parks provide peaceful spots to relax. <br>
-                Whether you are interested in history, culture, or simply enjoying beautiful scenery, Tallinn has something for everyone.
-            </p>
-        </div>
-
-        <div class="top-10">
-
-        </div>
-        
-        <h2>Tallinn's Culinary...</h2>
-
-        <div class="food-recs">
-            <p>
-                Tallinn is a beautiful and ancient city in Estonia. Its most special part is the Old Town, one of the best-preserved medieval cities in Europe. The streets are made of ancient cobblestones, and you can see colorful houses, tall church towers, and ancient walls. The city has a magical atmosphere. You can visit the main square, admire the ancient walls, or simply get lost in its small, beautiful streets. This is truly an unforgettable place.
-                <br><br>
-
-                Beyond its medieval charm, Tallinn is also a modern city with vibrant cafes, innovative museums, and a lively arts scene. <br>
-                The city’s seaside promenades offer stunning views of the Baltic Sea, and its parks provide peaceful spots to relax. <br>
-                Whether you are interested in history, culture, or simply enjoying beautiful scenery, Tallinn has something for everyone.
-            </p>
-
-             <figure>
-                <img src="images/balti.jpg" alt="View of Balti jaama turg, local market in Tallinn">
-                <figcaption>Balti jaama turg</figcaption>
-            </figure>
-        </div>
-    </article>
+    <h2>Dutch Cuisine...</h2>
+    <div class="food-recs">
+        <p>
+            In Amsterdam, be sure to try the famous pannenkoeken, which are Dutch pancakes. They are much larger and thinner than American pancakes, similar to a crêpe, and can be ordered with either sweet or savory fillings. If you're looking for something smaller, try the poffertjes, which are fluffy mini-pancakes served with melted butter and powdered sugar, perfect for a quick snack.
+        </p>
+        <figure>
+            <img src="images/pancake.jpg" alt="Local dish, pannenkoeken" loading="lazy">
+            <figcaption>Pannenkoeken</figcaption>
+        </figure>
+    </div>
+</article>
 
     
     <footer>
