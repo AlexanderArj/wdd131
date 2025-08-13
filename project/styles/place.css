@@ -128,6 +128,10 @@ article img {
     border-radius: var(--border-radius-md);
 }
 
+figcaption {
+    text-align: center;
+}
+
 .data, .weather {
     padding: var(--spacing-lg);
     margin-bottom: var(--spacing-lg);
